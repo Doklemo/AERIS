@@ -3,6 +3,32 @@ document.addEventListener('DOMContentLoaded', () => {
   const cartCount = cartLink ? cartLink.querySelector('.cart-count') : null;
   const heroBgImg = document.getElementById('heroBgImg');
   const shopNowBtn = document.getElementById('btnShopNow');
+  const siteHeader = document.getElementById('siteHeader');
+
+  // Sticky Navbar Dark Background on 80vh Scroll Threshold
+  if (siteHeader) {
+    let ticking = false;
+    const handleHeaderScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          const threshold = window.innerHeight * 0.8; // 80vh
+          const isScrolled = siteHeader.classList.contains('scrolled');
+          
+          // Hysteresis boundary (80vh to activate, 75vh to deactivate) for seamless transition
+          if (!isScrolled && window.scrollY >= threshold) {
+            siteHeader.classList.add('scrolled');
+          } else if (isScrolled && window.scrollY < (threshold - 40)) {
+            siteHeader.classList.remove('scrolled');
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', handleHeaderScroll, { passive: true });
+    handleHeaderScroll();
+  }
 
   // Multilanguage support dictionary
   const translations = {
@@ -977,20 +1003,19 @@ document.addEventListener('DOMContentLoaded', () => {
     let shoeIndex = 0;
 
     footer.addEventListener('mousemove', (e) => {
-      // Avoid active links, buttons, search inputs, list elements, and SVGs
-      const targetTag = e.target.tagName.toLowerCase();
+      // Avoid links, buttons, search inputs, text headings, list elements, footer columns, and SVGs
       if (
-        targetTag === 'a' || 
-        targetTag === 'button' || 
-        targetTag === 'input' || 
-        targetTag === 'text' || 
-        targetTag === 'rect' ||
-        targetTag === 'line' ||
-        targetTag === 'circle' ||
-        targetTag === 'path' ||
-        e.target.closest('svg') || 
+        e.target.closest('a') || 
+        e.target.closest('button') || 
+        e.target.closest('input') || 
         e.target.closest('ul') || 
-        e.target.closest('.footer-column:not(.footer-newsletter-column)')
+        e.target.closest('li') || 
+        e.target.closest('h4') || 
+        e.target.closest('p') || 
+        e.target.closest('span') || 
+        e.target.closest('svg') || 
+        e.target.closest('.footer-column') || 
+        e.target.closest('.footer-bottom-col')
       ) {
         return;
       }
@@ -1003,8 +1028,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const distance = Math.hypot(currentX - lastX, currentY - lastY);
       const now = Date.now();
 
-      // Only spawn if mouse has moved at least 110px and at least 200ms has passed
-      if (distance > 110 && now - lastSpawnTime > 200) {
+      // Only spawn if mouse has moved at least 75px and at least 140ms has passed
+      if (distance > 75 && now - lastSpawnTime > 140) {
         lastX = currentX;
         lastY = currentY;
         lastSpawnTime = now;
@@ -1015,8 +1040,10 @@ document.addEventListener('DOMContentLoaded', () => {
         card.style.top = `${currentY}px`;
 
         // Slight randomized rotation offset for slick organic feeling
-        const rot = (Math.random() * 20 - 10).toFixed(1);
-        card.style.transform = `translate(-50%, -50%) scale(0.3) rotate(${rot}deg)`;
+        const rotVal = (Math.random() * 22 - 11).toFixed(1);
+        const rotOutVal = (parseFloat(rotVal) + (Math.random() * 10 - 5)).toFixed(1);
+        card.style.setProperty('--rot', `${rotVal}deg`);
+        card.style.setProperty('--rot-out', `${rotOutVal}deg`);
 
         const img = document.createElement('img');
         img.src = shoeImages[shoeIndex];
@@ -1031,10 +1058,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // Animate spring-in in next layout frame
         requestAnimationFrame(() => {
           card.classList.add('active');
-          card.style.transform = `translate(-50%, -50%) scale(1) rotate(${rot}deg)`;
         });
 
-        // Trigger fade out after 700ms
+        // Trigger fade out after 650ms
         setTimeout(() => {
           card.classList.add('fade-out');
           card.classList.remove('active');
@@ -1042,8 +1068,8 @@ document.addEventListener('DOMContentLoaded', () => {
           // Clear element after transitions fade out
           setTimeout(() => {
             card.remove();
-          }, 1200);
-        }, 700);
+          }, 900);
+        }, 650);
       }
     });
   }
