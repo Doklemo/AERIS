@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="AERIS - Sustainably soft, high-performance footwear engineered from natural banana fibers. Walk light on the earth.">
+  <title>AERIS | Engineered Lightness</title>
+  <!-- Google Fonts for Modern Sans-Serif Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Background Hero Image Wrapper -->
+  <div class="hero-bg-container" id="heroBgContainer">
+    <img src="assets/nanobanana_hero_bg.jpg" alt="nanobanana yellow and white eco-friendly sneakers" class="hero-bg-img"
+      id="heroBgImg">
+    <div class="hero-overlay" id="heroOverlay"></div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav-bar" aria-label="Main Navigation">
+      <!-- Left Navigation Items -->
+      <div class="nav-group nav-left">
+        <ul class="nav-menu">
+          <li><a href="#women" class="nav-link" id="linkWomen">WOMEN</a></li>
+          <li><a href="#men" class="nav-link" id="linkMen">MEN</a></li>
+          <li><a href="#impact" class="nav-link" id="linkImpact">IMPACT</a></li>
+          <li><a href="#shoe-finder" class="nav-link" id="linkShoeFinder">SHOE FINDER</a></li>
+        </ul>
+      </div>
+
+      <!-- Center Logo -->
+      <div class="nav-group nav-center">
+        <a href="#" class="logo-link" id="logoLink" aria-label="AERIS Home">
+          <svg class="logo-icon" width="26" height="26" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 20L10.5 4.5C11.2 3.1 12.8 3.1 13.5 4.5L21 20" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M7 13.5H17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <circle cx="12" cy="10" r="1.5" fill="var(--color-aeris-accent)" />
+          </svg>
+          <span class="logo-text">AERIS</span>
+        </a>
+      </div>
+
+      <!-- Right Navigation Items -->
+      <ul class="nav-group nav-right">
+        <li><a href="#search" class="nav-link" id="linkSearch">SEARCH</a></li>
+        <li class="mobile-only"><button class="nav-menu-text-btn" id="btnHamburger">MENU</button></li>
+        <li class="desktop-only"><a href="#help" class="nav-link" id="linkHelp">HELP</a></li>
+        <li class="desktop-only">
+          <a href="#region" class="nav-link nav-region" id="linkRegion">
+            <span class="flag-emoji">🇨🇦</span> EN/CAD
+          </a>
+        </li>
+        <li class="desktop-only"><a href="#login" class="nav-link" id="linkLogin">LOGIN</a></li>
+        <li>
+          <a href="#cart" class="nav-link nav-cart" id="linkCart">
+            CART <span class="cart-count">0</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Hero Content -->
+  <main class="hero-container" id="mainContent">
+    <section class="hero-content-wrapper" aria-labelledby="heroTitle">
+      <div class="hero-info-tag" id="heroInfoTag">AERIS ONE / AERO-KNIT</div>
+
+      <h1 class="hero-title" id="heroTitle">
+        Engineered for Lightness.<br>
+        Built to Last
+      </h1>
+
+      <div class="hero-actions" id="heroActions">
+        <a href="#details" class="btn btn-outline" id="btnReadMore">READ MORE</a>
+        <a href="#shop" class="btn btn-outline btn-shop" id="btnShopNow">SHOP NOW</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Spring News Product Carousel/Grid Section -->
+  <section class="product-carousel-section" aria-labelledby="carouselTitle">
+    <div class="carousel-header">
+      <div class="carousel-title-group">
+        <h2 class="carousel-title" id="carouselTitle">SPRING NEWS</h2>
+        <a href="#shop-all" class="shop-all-link" id="linkShopAll">SHOP ALL</a>
+      </div>
+      <div class="carousel-nav">
+        <button class="carousel-nav-btn prev-btn" id="btnCarouselPrev" aria-label="Previous products">Prev</button>
+        <button class="carousel-nav-btn next-btn" id="btnCarouselNext" aria-label="Next products">Next</button>
+      </div>
+    </div>
+
+    <div class="product-grid">
+      <!-- Product 1: AERIS Leaf Olive -->
+      <div class="product-column">
+        <div class="product-image-wrapper">
+          <img src="assets/product_eli_olive_default.jpg" alt="AERIS Leaf Olive Sneaker"
+            class="product-img product-img-default">
+          <img src="assets/product_eli_olive_hover.jpg" alt="Person wearing AERIS Leaf Olive Sneaker"
+            class="product-img product-img-hover">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">AERIS Leaf</h3>
+          <div class="product-colorway">Olive</div>
+          <div class="product-price" data-base-price="149.95" id="price-eli-olive">149.95 USD</div>
+        </div>
+      </div>
+
+      <!-- Product 2: AERIS Stream Steel blue -->
+      <div class="product-column">
+        <div class="product-image-wrapper">
+          <img src="assets/product_eli_blue_default.jpg" alt="AERIS Stream Steel blue Sneaker"
+            class="product-img product-img-default">
+          <img src="assets/product_eli_blue_hover.jpg" alt="Person wearing AERIS Stream Steel blue Sneaker"
+            class="product-img product-img-hover">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">AERIS Stream</h3>
+          <div class="product-colorway">Steel blue</div>
+          <div class="product-price" data-base-price="149.95" id="price-eli-blue">149.95 USD</div>
+        </div>
+      </div>
+
+      <!-- Product 3: AERIS Terra Oat/Terracotta -->
+      <div class="product-column">
+        <div class="product-image-wrapper">
+          <img src="assets/product_norna_terracotta_default.jpg" alt="AERIS Terra Oat/Terracotta Sneaker"
+            class="product-img product-img-default">
+          <img src="assets/product_norna_terracotta_hover.jpg" alt="Person wearing AERIS Terra Oat/Terracotta Sneaker"
+            class="product-img product-img-hover">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">AERIS Terra</h3>
+          <div class="product-colorway">Oat/Terracotta</div>
+          <div class="product-price" data-base-price="169.95" id="price-norna-terracotta">169.95 USD</div>
+        </div>
+      </div>
+
+      <!-- Product 4: AERIS Dune Oat/Almond -->
+      <div class="product-column">
+        <div class="product-image-wrapper">
+          <img src="assets/product_norna_almond_default.jpg" alt="AERIS Dune Oat/Almond Sneaker"
+            class="product-img product-img-default">
+          <img src="assets/product_norna_almond_hover.jpg" alt="Person wearing AERIS Dune Oat/Almond Sneaker"
+            class="product-img product-img-hover">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">AERIS Dune</h3>
+          <div class="product-colorway">Oat/Almond</div>
+          <div class="product-price" data-base-price="169.95" id="price-norna-almond">169.95 USD</div>
+        </div>
+      </div>
+
+      <!-- Product 5: AERIS Onyx Black -->
+      <div class="product-column">
+        <div class="product-image-wrapper">
+          <img src="assets/product_mosi_black_default.jpg" alt="AERIS Onyx Black Sneaker"
+            class="product-img product-img-default">
+          <img src="assets/product_mosi_black_hover.jpg" alt="Person wearing AERIS Onyx Black Sneaker"
+            class="product-img product-img-hover">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">AERIS Onyx</h3>
+          <div class="product-colorway">Black</div>
+          <div class="product-price" data-base-price="159.95" id="price-mosi-black">159.95 USD</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Statement Section -->
+  <section class="brand-statement-section" aria-label="Brand Philosophy">
+    <div class="statement-container">
+      <h2 class="statement-headline" id="statementHeadline">
+        Engineered for lightness. Built from nature. Footwear for a lighter footprint.
+      </h2>
+      <a href="#explore" class="btn btn-outline btn-explore" id="btnExploreBrand">EXPLORE AERIS</a>
+    </div>
+  </section>
+
+  <!-- Brand Feature Section -->
+  <section class="brand-feature-section" id="brandFeatureSection" aria-label="Brand Feature Highlight">
+    <div class="feature-bg-container">
+      <img src="assets/brand_feature_bg.jpg" class="feature-bg-img"
+        alt="Hiker wearing AERIS Leaf sneaker on forest trail">
+      <div class="feature-overlay"></div>
+    </div>
+    <div class="feature-content">
+      <span class="feature-tag" id="featureTag">NATURALLY RESILIENT</span>
+      <h2 class="feature-headline" id="featureHeadline">0% petroleum. <br> 100% plant fiber.</h2>
+      <div class="feature-actions">
+        <a href="#details" class="btn btn-outline" id="btnFeatureReadMore">READ MORE</a>
+        <a href="#shop" class="btn btn-outline btn-shop" id="btnFeatureShopNow">SHOP NOW</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hiking Shoes Section -->
+  <section class="product-carousel-section" aria-label="Hiking Shoes Collection">
+    <div class="carousel-header">
+      <div class="carousel-title-group">
+        <h2 class="carousel-title" id="hikingCarouselTitle">HIKING SHOES</h2>
+        <a href="#shop-all" class="shop-all-link" id="linkHikingShopAll">SHOP ALL</a>
+      </div>
+      <div class="carousel-nav">
+        <button class="carousel-nav-btn prev-btn" id="btnHikingCarouselPrev"
+          aria-label="Previous hiking shoes">Prev</button>
+        <button class="carousel-nav-btn next-btn" id="btnHikingCarouselNext"
+          aria-label="Next hiking shoes">Next</button>
+      </div>
+    </div>
+
+    <div class="product-grid" id="hikingProductGrid">
+      <!-- Product 1: AERIS Peak Green -->
+      <div class="product-column">
+        <div class="product-image-wrapper">
+          <img src="assets/hiking_peak_default.jpg" alt="AERIS Peak Forest Green Hiking Shoe"
+            class="product-img product-img-default">
+          <img src="assets/hiking_peak_hover.jpg" alt="Person wearing AERIS Peak Forest Green Hiking Shoe"
+            class="product-img product-img-hover">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">AERIS Peak</h3>
+          <div class="product-colorway">Forest Green</div>
+          <div class="product-price" data-base-price="179.95" id="price-hiking-peak">179.95 USD</div>
+        </div>
+      </div>
+
+      <!-- Product 2: AERIS Summit Sand -->
+      <div class="product-column">
+        <div class="product-image-wrapper">
+          <img src="assets/hiking_summit_default.jpg" alt="AERIS Summit Sand Oat Hiking Shoe"
+            class="product-img product-img-default">
+          <img src="assets/hiking_summit_hover.jpg" alt="Person wearing AERIS Summit Sand Oat Hiking Shoe"
+            class="product-img product-img-hover">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">AERIS Summit</h3>
+          <div class="product-colorway">Sand/Oat</div>
+          <div class="product-price" data-base-price="189.95" id="price-hiking-summit">189.95 USD</div>
+        </div>
+      </div>
+
+      <!-- Product 3: AERIS Ridge Terracotta -->
+      <div class="product-column">
+        <div class="product-image-wrapper">
+          <img src="assets/hiking_ridge_default.jpg" alt="AERIS Ridge Terracotta Rust Hiking Boot"
+            class="product-img product-img-default">
+          <img src="assets/hiking_ridge_hover.jpg" alt="Person wearing AERIS Ridge Terracotta Rust Hiking Boot"
+            class="product-img product-img-hover">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">AERIS Ridge</h3>
+          <div class="product-colorway">Terracotta/Rust</div>
+          <div class="product-price" data-base-price="179.95" id="price-hiking-ridge">179.95 USD</div>
+        </div>
+      </div>
+
+      <!-- Product 4: AERIS Alpine Obsidian -->
+      <div class="product-column">
+        <div class="product-image-wrapper">
+          <img src="assets/hiking_alpine_default.jpg" alt="AERIS Alpine Obsidian Charcoal Hiking Boot"
+            class="product-img product-img-default">
+          <img src="assets/hiking_alpine_hover.jpg" alt="Person wearing AERIS Alpine Obsidian Charcoal Hiking Boot"
+            class="product-img product-img-hover">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">AERIS Alpine</h3>
+          <div class="product-colorway">Obsidian/Charcoal</div>
+          <div class="product-price" data-base-price="199.95" id="price-hiking-alpine">199.95 USD</div>
+        </div>
+      </div>
+
+      <!-- Product 5: AERIS Glacier Steel Blue -->
+      <div class="product-column">
+        <div class="product-image-wrapper">
+          <img src="assets/hiking_glacier_default.jpg" alt="AERIS Glacier Steel Blue Hiking Shoe"
+            class="product-img product-img-default">
+          <img src="assets/hiking_glacier_hover.jpg" alt="Person wearing AERIS Glacier Steel Blue Hiking Shoe"
+            class="product-img product-img-hover">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">AERIS Glacier</h3>
+          <div class="product-colorway">Steel Blue/Slate</div>
+          <div class="product-price" data-base-price="189.95" id="price-hiking-glacier">189.95 USD</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Summer Classic Feature Section -->
+  <section class="brand-feature-section" id="summerClassicSection" aria-label="Summer Feature Highlight">
+    <div class="feature-bg-container">
+      <img src="assets/summer_classic_bg.jpg" class="feature-bg-img"
+        alt="Two people walking side-by-side in AERIS sneakers on a stone pier">
+      <div class="feature-overlay"></div>
+    </div>
+    <div class="feature-content">
+      <span class="feature-tag" id="summerFeatureTag">AERIS ONE</span>
+      <h2 class="feature-headline" id="summerFeatureHeadline">Built to breathe. Crafted to wander.</h2>
+      <div class="feature-actions">
+        <a href="#details" class="btn btn-outline" id="btnSummerReadMore">READ MORE</a>
+        <a href="#shop" class="btn btn-outline btn-shop" id="btnSummerShopNow">SHOP NOW</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Walking Shoes Section -->
+  <section class="product-carousel-section" aria-label="Walking Shoes Collection">
+    <div class="carousel-header">
+      <div class="carousel-title-group">
+        <h2 class="carousel-title" id="walkingCarouselTitle">WALKING SHOES</h2>
+        <a href="#shop-all" class="shop-all-link" id="linkWalkingShopAll">SHOP ALL</a>
+      </div>
+      <div class="carousel-nav">
+        <button class="carousel-nav-btn prev-btn" id="btnWalkingCarouselPrev"
+          aria-label="Previous walking shoes">Prev</button>
+        <button class="carousel-nav-btn next-btn" id="btnWalkingCarouselNext"
+          aria-label="Next walking shoes">Next</button>
+      </div>
+    </div>
+
+    <div class="product-grid" id="walkingProductGrid">
+      <!-- Product 1: AERIS Breeze -->
+      <div class="product-column">
+        <div class="product-image-wrapper">
+          <img src="assets/walking_breeze_default.jpg" alt="AERIS Breeze White/Gray Walking Shoe"
+            class="product-img product-img-default">
+          <img src="assets/walking_breeze_hover.jpg" alt="AERIS Breeze on a sunny path"
+            class="product-img product-img-hover">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">AERIS Breeze</h3>
+          <div class="product-colorway">White / Gray</div>
+          <div class="product-price" data-base-price="139.95" id="price-walking-breeze">139.95 USD</div>
+        </div>
+      </div>
+
+      <!-- Product 2: AERIS Cloud -->
+      <div class="product-column">
+        <div class="product-image-wrapper">
+          <img src="assets/walking_cloud_default.jpg" alt="AERIS Cloud Sky Blue Walking Shoe"
+            class="product-img product-img-default">
+          <img src="assets/walking_cloud_hover.jpg" alt="AERIS Cloud on a wooden boardwalk"
+            class="product-img product-img-hover">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">AERIS Cloud</h3>
+          <div class="product-colorway">Sky Blue</div>
+          <div class="product-price" data-base-price="149.95" id="price-walking-cloud">149.95 USD</div>
+        </div>
+      </div>
+
+      <!-- Product 3: AERIS Mist -->
+      <div class="product-column">
+        <div class="product-image-wrapper">
+          <img src="assets/walking_mist_default.jpg" alt="AERIS Mist Slate Gray Walking Shoe"
+            class="product-img product-img-default">
+          <img src="assets/walking_mist_hover.jpg" alt="AERIS Mist in a modern plaza"
+            class="product-img product-img-hover">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">AERIS Mist</h3>
+          <div class="product-colorway">Slate Gray</div>
+          <div class="product-price" data-base-price="139.95" id="price-walking-mist">139.95 USD</div>
+        </div>
+      </div>
+
+      <!-- Product 4: AERIS Dawn -->
+      <div class="product-column">
+        <div class="product-image-wrapper">
+          <img src="assets/walking_dawn_default.jpg" alt="AERIS Dawn Rose/Peach Walking Shoe"
+            class="product-img product-img-default">
+          <img src="assets/walking_dawn_hover.jpg" alt="AERIS Dawn in a botanical garden"
+            class="product-img product-img-hover">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">AERIS Dawn</h3>
+          <div class="product-colorway">Rose / Peach</div>
+          <div class="product-price" data-base-price="149.95" id="price-walking-dawn">149.95 USD</div>
+        </div>
+      </div>
+
+      <!-- Product 5: AERIS Dusk -->
+      <div class="product-column">
+        <div class="product-image-wrapper">
+          <img src="assets/walking_dusk_default.jpg" alt="AERIS Dusk Charcoal/Indigo Walking Shoe"
+            class="product-img product-img-default">
+          <img src="assets/walking_dusk_hover.jpg" alt="AERIS Dusk on a twilight cobblestone street"
+            class="product-img product-img-hover">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">AERIS Dusk</h3>
+          <div class="product-colorway">Charcoal / Indigo</div>
+          <div class="product-price" data-base-price="149.95" id="price-walking-dusk">149.95 USD</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shoe Finder Section -->
+  <section class="shoefinder-section" id="shoeFinderSection" aria-label="AERIS Shoe Finder">
+    <div class="shoefinder-container">
+      <!-- Left Column: Asymmetrical Images -->
+      <div class="shoefinder-images-column">
+        <div class="shoefinder-img-small-wrapper">
+          <img src="assets/shoefinder_trail.jpg" class="shoefinder-img"
+            alt="Close-up of cream organic rubber tread climbing a trail">
+        </div>
+        <div class="shoefinder-img-large-wrapper">
+          <img src="assets/shoefinder_water.jpg" class="shoefinder-img"
+            alt="White plant-fiber sneaker stepping on wet sea rocks with water splashing">
+        </div>
+      </div>
+
+      <!-- Right Column: Text Content -->
+      <div class="shoefinder-text-column">
+        <span class="shoefinder-tag" id="shoefinderTag">SHOE FINDER</span>
+        <h2 class="shoefinder-headline" id="shoefinderHeadline">Not sure which path to take? From city streets to
+          mountain peaks, discover the perfect fit for your next low-impact journey.</h2>
+        <a href="#shoe-finder-tool" class="btn btn-outline" id="btnShoefinderCTA">FIND YOUR FIT</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Explore by Category Section -->
+  <section class="product-carousel-section category-section" aria-label="Explore by Category">
+    <div class="carousel-header">
+      <div class="carousel-title-group">
+        <h2 class="carousel-title" id="categoryTitle">EXPLORE BY CATEGORY</h2>
+        <a href="#shop-all" class="shop-all-link" id="linkCategoryShopAll">SHOP ALL</a>
+      </div>
+      <div class="carousel-nav">
+        <button class="carousel-nav-btn prev-btn" id="btnCategoryPrev" aria-label="Previous categories">Prev</button>
+        <button class="carousel-nav-btn next-btn" id="btnCategoryNext" aria-label="Next categories">Next</button>
+      </div>
+    </div>
+
+    <div class="product-grid" id="categoryProductGrid">
+      <!-- Category 1: New Arrivals -->
+      <div class="product-column">
+        <div class="category-card">
+          <img src="assets/summer_classic_bg.jpg" class="category-img"
+            alt="Two people walking side-by-side in AERIS sneakers on a stone pier">
+          <div class="category-card-overlay">
+            <h3 class="category-card-title" id="catLabelNewArrivals">New Arrivals</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 2: Plant-Knit Sneakers -->
+      <div class="product-column">
+        <div class="category-card">
+          <img src="assets/walking_cloud_hover.jpg" class="category-img"
+            alt="Close-up of sky blue sneakers walking on a wooden boardwalk">
+          <div class="category-card-overlay">
+            <h3 class="category-card-title" id="catLabelPlantKnit">Plant-Knit Sneakers</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 3: All-Weather Hiking -->
+      <div class="product-column">
+        <div class="category-card">
+          <img src="assets/hiking_peak_hover.jpg" class="category-img"
+            alt="Forest green hiking boots walking on a wet mud trail path">
+          <div class="category-card-overlay">
+            <h3 class="category-card-title" id="catLabelAllWeather">All-Weather Hiking</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 4: Active Apparel -->
+      <div class="product-column">
+        <div class="category-card">
+          <img src="assets/walking_breeze_hover.jpg" class="category-img"
+            alt="Person wearing white walking shoes running in a sunny park with joggers blurred in background">
+          <div class="category-card-overlay">
+            <h3 class="category-card-title" id="catLabelActiveApparel">Active Apparel</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 5: Footwear Tech -->
+      <div class="product-column">
+        <div class="category-card">
+          <img src="assets/shoefinder_trail.jpg" class="category-img"
+            alt="Close-up of a shoe sole cream tread pattern climbing a rocky trail">
+          <div class="category-card-overlay">
+            <h3 class="category-card-title" id="catLabelFootwearTech">Footwear Tech</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Mission Section -->
+  <section class="brand-mission-section" aria-label="Brand Mission">
+    <!-- Looping Background Video with Cover Image Fallback -->
+    <video autoplay loop muted playsinline class="mission-bg-video" poster="assets/brand_mission_bg.jpg"
+      id="missionVideo">
+      <source src="assets/brand_mission.mp4" type="video/mp4">
+    </video>
+    <div class="mission-video-overlay"></div>
+
+    <div class="mission-columns">
+      <!-- Left Column: Short Tagline -->
+      <div class="mission-left-col">
+        <span class="mission-tag" id="missionLeftTag">COMMITTED TO THE JOURNEY. FOR LIFE.</span>
+      </div>
+
+      <!-- Middle Column: Large Brand Statement Statement -->
+      <div class="mission-mid-col">
+        <p class="mission-statement" id="missionMidStatement">While industry defaults prioritize short-term margins,
+          AERIS commits 100% of our focus to restoring biodiversity, using zero petroleum plastics, and ensuring
+          absolute transparency from raw plant fiber to your front door.</p>
+      </div>
+
+      <!-- Right Column: Outlined Action Button -->
+      <div class="mission-right-col">
+        <a href="#directives" class="btn btn-outline btn-mission-cta" id="btnMissionCTA">OUR DIRECTIVES</a>
+      </div>
+    </div>
+  </section>
+
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="brand-footer" role="contentinfo" aria-label="Brand Footer">
+    <!-- Hover Image Trail Container -->
+    <div class="footer-hover-trail-container" id="footerHoverTrail" aria-hidden="true"></div>
+
+    <!-- Top Row: Information Links and Newsletter -->
+    <div class="footer-top-row">
+      <!-- Info Column -->
+      <div class="footer-column">
+        <h4 class="footer-col-title" id="footerTitleInfo">INFO</h4>
+        <ul class="footer-links-list">
+          <li><a href="#faq" id="footerLinkFaq">FAQ</a></li>
+          <li><a href="#shoe-care" id="footerLinkShoeCare">Shoe care</a></li>
+          <li><a href="#privacy" id="footerLinkPrivacy">Privacy Policy</a></li>
+          <li><a href="#shipping" id="footerLinkShipping">Shipping & Terms</a></li>
+          <li><a href="#returns" id="footerLinkReturns">Create Return</a></li>
+          <li><a href="#cookie-policy" id="footerLinkCookiePolicy">Cookie Policy</a></li>
+          <li><a href="#cookie-settings" id="footerLinkCookieSettings">Cookie Settings</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media Column -->
+      <div class="footer-column">
+        <h4 class="footer-col-title" id="footerTitleSocial">SOCIAL MEDIA</h4>
+        <ul class="footer-links-list">
+          <li><a href="#instagram" id="footerLinkInstagram">Instagram</a></li>
+          <li><a href="#facebook" id="footerLinkFacebook">Facebook</a></li>
+          <li><a href="#linkedin" id="footerLinkLinkedIn">LinkedIn</a></li>
+          <li><a href="#youtube" id="footerLinkYouTube">YouTube</a></li>
+          <li><a href="#pinterest" id="footerLinkPinterest">Pinterest</a></li>
+        </ul>
+      </div>
+
+      <!-- Brand Info Column -->
+      <div class="footer-column">
+        <h4 class="footer-col-title" id="footerTitleBrand">AERIS</h4>
+        <ul class="footer-links-list">
+          <li><a href="#about" id="footerLinkAbout">About AERIS</a></li>
+          <li><a href="#explore" id="footerLinkExplore">Explore AERIS</a></li>
+          <li><a href="#impact" id="footerLinkImpact">Impact</a></li>
+          <li><a href="#tech" id="footerLinkTech">Plant-Fiber Tech</a></li>
+          <li><a href="#careers" id="footerLinkCareers">Work at AERIS</a></li>
+          <li><a href="#contact" id="footerLinkContact">Contact</a></li>
+          <li><a href="#stories" id="footerLinkStories">Stories</a></li>
+          <li><a href="#press" id="footerLinkPress">Press</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter Column -->
+      <div class="footer-column footer-newsletter-column">
+        <p class="footer-newsletter-statement" id="footerNewsletterStatement">Get updates on climate action and
+          essential products, and let us inspire you to get out more - all year round.</p>
+        <button class="btn btn-solid btn-footer-subscribe" id="btnFooterSubscribe">SIGN UP NOW</button>
+      </div>
+    </div>
+
+    <!-- Bottom Row: Tagline, Localization, Theme, and Badges -->
+    <div class="footer-bottom-row">
+      <!-- Left Column: Branding Tagline -->
+      <div class="footer-bottom-col footer-bottom-left">
+        <!-- AERIS Brand Logo -->
+        <svg class="footer-brand-icon" width="28" height="28" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M3 20L10.5 4.5C11.2 3.1 12.8 3.1 13.5 4.5L21 20" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M7 13.5H17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <circle cx="12" cy="10" r="1.5" fill="var(--color-aeris-accent)" />
+        </svg>
+        <p class="footer-tagline" id="footerTagline">AERIS crafts plant-based footwear designed for lightness and zero
+          petroleum plastic impact, raising the bar for a circular future.</p>
+      </div>
+
+      <!-- Center Column: Regions, Themes, and Copyright -->
+      <div class="footer-bottom-col footer-bottom-center">
+        <!-- Region / Language Selector Link -->
+        <button class="footer-region-trigger" id="btnFooterRegion" aria-haspopup="dialog"
+          aria-label="Change Language and Country">EN / USD</button>
+
+        <!-- Theme Selector -->
+        <div class="footer-theme-selector" role="radiogroup" aria-label="Theme Selector">
+          <button class="footer-theme-btn" data-theme="light" role="radio" aria-checked="false"
+            id="themeBtnLight">LIGHT</button>
+          <span class="theme-separator" aria-hidden="true">/</span>
+          <button class="footer-theme-btn" data-theme="dark" role="radio" aria-checked="false"
+            id="themeBtnDark">DARK</button>
+          <span class="theme-separator" aria-hidden="true">/</span>
+          <button class="footer-theme-btn active" data-theme="system" role="radio" aria-checked="true"
+            id="themeBtnSystem">SYSTEM</button>
+        </div>
+
+        <span class="footer-copyright" id="footerCopyright">© AERIS 2026</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sidebar Backdrop -->
+  <div class="sidebar-backdrop" id="sidebarBackdrop" aria-hidden="true"></div>
+
+  <!-- Sidebar Location Slideout -->
+  <div class="sidebar-container" id="sidebarContainer" role="dialog" aria-modal="true"
+    aria-label="Language and Country Selector" aria-hidden="true">
+    <div class="sidebar-header">
+      <span class="sidebar-title">LANGUAGE AND COUNTRY</span>
+      <button class="sidebar-close-btn" id="btnSidebarClose" aria-label="Close sidebar">CLOSE</button>
+    </div>
+
+    <!-- Sidebar Outline Content Box -->
+    <div class="sidebar-content-box">
+      <div class="sidebar-search">
+        <input type="text" id="countrySearchInput" placeholder="Search" aria-label="Search countries">
+      </div>
+
+      <div class="sidebar-list" id="countryList">
+        <div class="country-item" data-country="AUSTRALIA" data-flag="🇦🇺" data-currency="AUD">
+          <span class="country-name">AUSTRALIA (AUD)</span>
+          <div class="lang-options">
+            <button class="lang-btn" data-lang="EN">EN</button>
+          </div>
+        </div>
+        <div class="country-item has-multiple-langs" data-country="AUSTRIA" data-flag="🇦🇹" data-currency="EUR">
+          <span class="country-name">
+            <span class="country-text-label">AUSTRIA (EUR)</span>
+            <span class="choose-lang-label">CHOOSE A LANGUAGE</span>
+          </span>
+          <div class="lang-options">
+            <button class="lang-btn" data-lang="DE">DE</button>
+            <button class="lang-btn" data-lang="EN">EN</button>
+          </div>
+        </div>
+        <div class="country-item has-multiple-langs" data-country="BELGIUM" data-flag="🇧🇪" data-currency="EUR">
+          <span class="country-name">
+            <span class="country-text-label">BELGIUM (EUR)</span>
+            <span class="choose-lang-label">CHOOSE A LANGUAGE</span>
+          </span>
+          <div class="lang-options">
+            <button class="lang-btn" data-lang="DE">DE</button>
+            <button class="lang-btn" data-lang="EN">EN</button>
+            <button class="lang-btn" data-lang="FR">FR</button>
+          </div>
+        </div>
+        <div class="country-item" data-country="BULGARIA" data-flag="🇧🇬" data-currency="EUR">
+          <span class="country-name">BULGARIA (EUR)</span>
+          <div class="lang-options">
+            <button class="lang-btn" data-lang="EN">EN</button>
+          </div>
+        </div>
+        <div class="country-item selected has-multiple-langs" data-country="CANADA" data-flag="🇨🇦"
+          data-currency="CAD">
+          <span class="country-name">
+            <span class="check-icon">✓</span>
+            <span class="country-text-label">CANADA (CAD)</span>
+            <span class="choose-lang-label">CHOOSE A LANGUAGE</span>
+          </span>
+          <div class="lang-options">
+            <button class="lang-btn active-lang" data-lang="EN">EN</button>
+            <button class="lang-btn" data-lang="FR">FR</button>
+          </div>
+        </div>
+        <div class="country-item" data-country="CROATIA" data-flag="🇭🇷" data-currency="EUR">
+          <span class="country-name">CROATIA (EUR)</span>
+          <div class="lang-options">
+            <button class="lang-btn" data-lang="EN">EN</button>
+          </div>
+        </div>
+        <div class="country-item" data-country="CZECH REPUBLIC" data-flag="🇨🇿" data-currency="EUR">
+          <span class="country-name">CZECH REPUBLIC (EUR)</span>
+          <div class="lang-options">
+            <button class="lang-btn" data-lang="EN">EN</button>
+          </div>
+        </div>
+        <div class="country-item" data-country="DENMARK" data-flag="🇩🇰" data-currency="DKK">
+          <span class="country-name">DENMARK (DKK)</span>
+          <div class="lang-options">
+            <button class="lang-btn" data-lang="EN">EN</button>
+          </div>
+        </div>
+        <div class="country-item" data-country="ESTONIA" data-flag="🇪🇪" data-currency="EUR">
+          <span class="country-name">ESTONIA (EUR)</span>
+          <div class="lang-options">
+            <button class="lang-btn" data-lang="EN">EN</button>
+          </div>
+        </div>
+        <div class="country-item has-multiple-langs" data-country="FINLAND" data-flag="🇫🇮" data-currency="EUR">
+          <span class="country-name">
+            <span class="country-text-label">FINLAND (EUR)</span>
+            <span class="choose-lang-label">CHOOSE A LANGUAGE</span>
+          </span>
+          <div class="lang-options">
+            <button class="lang-btn" data-lang="EN">EN</button>
+            <button class="lang-btn" data-lang="FI">FI</button>
+            <button class="lang-btn" data-lang="SV">SV</button>
+          </div>
+        </div>
+        <div class="country-item has-multiple-langs" data-country="FRANCE" data-flag="🇫🇷" data-currency="EUR">
+          <span class="country-name">
+            <span class="country-text-label">FRANCE (EUR)</span>
+            <span class="choose-lang-label">CHOOSE A LANGUAGE</span>
+          </span>
+          <div class="lang-options">
+            <button class="lang-btn" data-lang="EN">EN</button>
+            <button class="lang-btn" data-lang="FR">FR</button>
+          </div>
+        </div>
+        <div class="country-item has-multiple-langs" data-country="GERMANY" data-flag="🇩🇪" data-currency="EUR">
+          <span class="country-name">
+            <span class="country-text-label">GERMANY (EUR)</span>
+            <span class="choose-lang-label">CHOOSE A LANGUAGE</span>
+          </span>
+          <div class="lang-options">
+            <button class="lang-btn" data-lang="DE">DE</button>
+            <button class="lang-btn" data-lang="EN">EN</button>
+          </div>
+        </div>
+        <div class="country-item has-multiple-langs" data-country="ITALY" data-flag="🇮🇹" data-currency="EUR">
+          <span class="country-name">
+            <span class="country-text-label">ITALY (EUR)</span>
+            <span class="choose-lang-label">CHOOSE A LANGUAGE</span>
+          </span>
+          <div class="lang-options">
+            <button class="lang-btn" data-lang="EN">EN</button>
+            <button class="lang-btn" data-lang="IT">IT</button>
+          </div>
+        </div>
+        <div class="country-item" data-country="NETHERLANDS" data-flag="🇳🇱" data-currency="EUR">
+          <span class="country-name">NETHERLANDS (EUR)</span>
+          <div class="lang-options">
+            <button class="lang-btn" data-lang="EN">EN</button>
+          </div>
+        </div>
+        <div class="country-item has-multiple-langs" data-country="SPAIN" data-flag="🇪🇸" data-currency="EUR">
+          <span class="country-name">
+            <span class="country-text-label">SPAIN (EUR)</span>
+            <span class="choose-lang-label">CHOOSE A LANGUAGE</span>
+          </span>
+          <div class="lang-options">
+            <button class="lang-btn" data-lang="EN">EN</button>
+            <button class="lang-btn" data-lang="ES">ES</button>
+          </div>
+        </div>
+        <div class="country-item has-multiple-langs" data-country="SWEDEN" data-flag="🇸🇪" data-currency="SEK">
+          <span class="country-name">
+            <span class="country-text-label">SWEDEN (SEK)</span>
+            <span class="choose-lang-label">CHOOSE A LANGUAGE</span>
+          </span>
+          <div class="lang-options">
+            <button class="lang-btn" data-lang="EN">EN</button>
+            <button class="lang-btn" data-lang="SV">SV</button>
+          </div>
+        </div>
+        <div class="country-item has-multiple-langs" data-country="SWITZERLAND" data-flag="🇨🇭" data-currency="CHF">
+          <span class="country-name">
+            <span class="country-text-label">SWITZERLAND (CHF)</span>
+            <span class="choose-lang-label">CHOOSE A LANGUAGE</span>
+          </span>
+          <div class="lang-options">
+            <button class="lang-btn" data-lang="DE">DE</button>
+            <button class="lang-btn" data-lang="EN">EN</button>
+            <button class="lang-btn" data-lang="FR">FR</button>
+          </div>
+        </div>
+        <div class="country-item" data-country="UNITED KINGDOM" data-flag="🇬🇧" data-currency="GBP">
+          <span class="country-name">UNITED KINGDOM (GBP)</span>
+          <div class="lang-options">
+            <button class="lang-btn" data-lang="EN">EN</button>
+          </div>
+        </div>
+        <div class="country-item" data-country="UNITED STATES" data-flag="🇺🇸" data-currency="USD">
+          <span class="country-name">UNITED STATES (USD)</span>
+          <div class="lang-options">
+            <button class="lang-btn" data-lang="EN">EN</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Navigation Menu Drawer -->
+  <div class="sidebar-container mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Navigation Menu">
+    <!-- Top Header Bar -->
+    <div class="mobile-drawer-header">
+      <div class="mobile-drawer-logo">
+        <svg class="logo-icon" width="22" height="22" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M3 20L10.5 4.5C11.2 3.1 12.8 3.1 13.5 4.5L21 20" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M7 13.5H17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <circle cx="12" cy="10" r="1.5" fill="var(--color-aeris-accent)" />
+        </svg>
+      </div>
+      <div class="mobile-drawer-actions">
+        <button class="drawer-action-btn" id="btnMobileSearch">SEARCH</button>
+        <button class="drawer-action-btn" id="btnMobileDrawerClose">CLOSE</button>
+        <button class="drawer-action-btn" id="btnMobileCart">CART <span class="cart-count">0</span></button>
+      </div>
+    </div>
+
+    <!-- Category Switcher Tabs -->
+    <div class="mobile-drawer-tabs">
+      <button class="drawer-tab-btn active" data-tab="women">WOMEN</button>
+      <button class="drawer-tab-btn" data-tab="men">MEN</button>
+      <button class="drawer-tab-btn" data-tab="impact">IMPACT</button>
+      <button class="drawer-tab-btn" data-tab="shoefinder">SHOE FINDER</button>
+    </div>
+
+    <!-- Subcategories Content Panel -->
+    <div class="mobile-drawer-body">
+      <div class="mobile-drawer-columns">
+        <!-- Shoes Category Block -->
+        <div class="drawer-cat-block">
+          <h5 class="drawer-cat-title">SHOES</h5>
+          <ul class="drawer-cat-links">
+            <li><a href="#shop-all" class="mobile-drawer-link">New Arrivals</a></li>
+            <li><a href="#shop-all" class="mobile-drawer-link">Sneakers</a></li>
+            <li><a href="#walking-shoes" class="mobile-drawer-link highlighted">Walking Shoes</a></li>
+            <li><a href="#hiking-shoes" class="mobile-drawer-link">Hiking Shoes</a></li>
+            <li><a href="#shop-all" class="mobile-drawer-link">Waterproof Shoes</a></li>
+            <li><a href="#shop-all" class="mobile-drawer-link">Trail Running Shoes</a></li>
+            <li><a href="#shop-all" class="mobile-drawer-link">Winter Boots</a></li>
+            <li><a href="#shop-all" class="mobile-drawer-link">Studded Winter Boots</a></li>
+            <li><a href="#shop-all" class="mobile-drawer-link">Winter Running Shoes</a></li>
+            <li><a href="#shop-all" class="mobile-drawer-link">Outlet</a></li>
+            <li><a href="#shop-all" class="mobile-drawer-link font-medium">All Shoes</a></li>
+          </ul>
+        </div>
+
+        <!-- Apparel & Accessories Category Block -->
+        <div class="drawer-cat-block">
+          <h5 class="drawer-cat-title">APPAREL & ACCESSORIES</h5>
+          <ul class="drawer-cat-links">
+            <li><a href="#shop-all" class="mobile-drawer-link">Apparel</a></li>
+            <li><a href="#shop-all" class="mobile-drawer-link">Accessories</a></li>
+            <li><a href="#shop-all" class="mobile-drawer-link">Icebug Insoles</a></li>
+            <li><a href="#shop-all" class="mobile-drawer-link font-medium">Shop All</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Side-by-Side Lifestyle Image Showcase -->
+      <div class="mobile-drawer-showcase">
+        <div class="drawer-showcase-item">
+          <div class="drawer-showcase-img-wrapper">
+            <img src="assets/summer_classic_bg.jpg" alt="New Arrivals" class="drawer-showcase-img">
+          </div>
+          <span class="drawer-showcase-label">New Arrivals</span>
+        </div>
+        <div class="drawer-showcase-item">
+          <div class="drawer-showcase-img-wrapper">
+            <img src="assets/hiking_peak_hover.jpg" alt="Hiking Shoes" class="drawer-showcase-img">
+          </div>
+          <span class="drawer-showcase-label">Hiking Shoes</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Settings/Configurations -->
+    <div class="mobile-drawer-footer">
+      <button class="drawer-footer-link" id="btnMobileRegion">
+        <span class="flag-emoji">🇨🇦</span> EN/CAD
+      </button>
+      <a href="#help" class="drawer-footer-link" id="mobileLinkHelp">HELP</a>
+      <a href="#login" class="drawer-footer-link" id="mobileLinkLogin">MY ACCOUNT</a>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
