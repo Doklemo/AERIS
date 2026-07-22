@@ -10,6 +10,7 @@
   <!-- Google Fonts for Modern Sans-Serif Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="assets/nanobanana_hero_bg.jpg" fetchpriority="high">
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -19,7 +20,7 @@
   <!-- Background Hero Image Wrapper -->
   <div class="hero-bg-container" id="heroBgContainer">
     <img src="assets/nanobanana_hero_bg.jpg" alt="nanobanana yellow and white eco-friendly sneakers" class="hero-bg-img"
-      id="heroBgImg">
+      id="heroBgImg" fetchpriority="high" loading="eager" decoding="async">
     <div class="hero-overlay" id="heroOverlay"></div>
   </div>
 
@@ -106,9 +107,9 @@
       <div class="product-column">
         <div class="product-image-wrapper">
           <img src="assets/product_eli_olive_default.jpg" alt="AERIS Leaf Olive Sneaker"
-            class="product-img product-img-default">
+            class="product-img product-img-default" loading="lazy" decoding="async">
           <img src="assets/product_eli_olive_hover.jpg" alt="Person wearing AERIS Leaf Olive Sneaker"
-            class="product-img product-img-hover">
+            class="product-img product-img-hover" loading="lazy" decoding="async">
         </div>
         <div class="product-info">
           <h3 class="product-title">AERIS Leaf</h3>
@@ -121,9 +122,9 @@
       <div class="product-column">
         <div class="product-image-wrapper">
           <img src="assets/product_eli_blue_default.jpg" alt="AERIS Stream Steel blue Sneaker"
-            class="product-img product-img-default">
+            class="product-img product-img-default" loading="lazy" decoding="async">
           <img src="assets/product_eli_blue_hover.jpg" alt="Person wearing AERIS Stream Steel blue Sneaker"
-            class="product-img product-img-hover">
+            class="product-img product-img-hover" loading="lazy" decoding="async">
         </div>
         <div class="product-info">
           <h3 class="product-title">AERIS Stream</h3>
@@ -136,9 +137,9 @@
       <div class="product-column">
         <div class="product-image-wrapper">
           <img src="assets/product_norna_terracotta_default.jpg" alt="AERIS Terra Oat/Terracotta Sneaker"
-            class="product-img product-img-default">
+            class="product-img product-img-default" loading="lazy" decoding="async">
           <img src="assets/product_norna_terracotta_hover.jpg" alt="Person wearing AERIS Terra Oat/Terracotta Sneaker"
-            class="product-img product-img-hover">
+            class="product-img product-img-hover" loading="lazy" decoding="async">
         </div>
         <div class="product-info">
           <h3 class="product-title">AERIS Terra</h3>
@@ -151,9 +152,9 @@
       <div class="product-column">
         <div class="product-image-wrapper">
           <img src="assets/product_norna_almond_default.jpg" alt="AERIS Dune Oat/Almond Sneaker"
-            class="product-img product-img-default">
+            class="product-img product-img-default" loading="lazy" decoding="async">
           <img src="assets/product_norna_almond_hover.jpg" alt="Person wearing AERIS Dune Oat/Almond Sneaker"
-            class="product-img product-img-hover">
+            class="product-img product-img-hover" loading="lazy" decoding="async">
         </div>
         <div class="product-info">
           <h3 class="product-title">AERIS Dune</h3>
@@ -166,9 +167,9 @@
       <div class="product-column">
         <div class="product-image-wrapper">
           <img src="assets/product_mosi_black_default.jpg" alt="AERIS Onyx Black Sneaker"
-            class="product-img product-img-default">
+            class="product-img product-img-default" loading="lazy" decoding="async">
           <img src="assets/product_mosi_black_hover.jpg" alt="Person wearing AERIS Onyx Black Sneaker"
-            class="product-img product-img-hover">
+            class="product-img product-img-hover" loading="lazy" decoding="async">
         </div>
         <div class="product-info">
           <h3 class="product-title">AERIS Onyx</h3>
@@ -193,7 +194,7 @@
   <section class="brand-feature-section" id="brandFeatureSection" aria-label="Brand Feature Highlight">
     <div class="feature-bg-container">
       <img src="assets/brand_feature_bg.jpg" class="feature-bg-img"
-        alt="Hiker wearing AERIS Leaf sneaker on forest trail">
+        alt="Hiker wearing AERIS Leaf sneaker on forest trail" loading="lazy" decoding="async">
       <div class="feature-overlay"></div>
     </div>
     <div class="feature-content">
@@ -226,9 +227,9 @@
       <div class="product-column">
         <div class="product-image-wrapper">
           <img src="assets/hiking_peak_default.jpg" alt="AERIS Peak Forest Green Hiking Shoe"
-            class="product-img product-img-default">
+            class="product-img product-img-default" loading="lazy" decoding="async">
           <img src="assets/hiking_peak_hover.jpg" alt="Person wearing AERIS Peak Forest Green Hiking Shoe"
-            class="product-img product-img-hover">
+            class="product-img product-img-hover" loading="lazy" decoding="async">
         </div>
         <div class="product-info">
           <h3 class="product-title">AERIS Peak</h3>
@@ -241,9 +242,9 @@
       <div class="product-column">
         <div class="product-image-wrapper">
           <img src="assets/hiking_summit_default.jpg" alt="AERIS Summit Sand Oat Hiking Shoe"
-            class="product-img product-img-default">
+            class="product-img product-img-default" loading="lazy" decoding="async">
           <img src="assets/hiking_summit_hover.jpg" alt="Person wearing AERIS Summit Sand Oat Hiking Shoe"
-            class="product-img product-img-hover">
+            class="product-img product-img-hover" loading="lazy" decoding="async">
         </div>
         <div class="product-info">
           <h3 class="product-title">AERIS Summit</h3>
@@ -256,9 +257,9 @@
       <div class="product-column">
         <div class="product-image-wrapper">
           <img src="assets/hiking_ridge_default.jpg" alt="AERIS Ridge Terracotta Rust Hiking Boot"
-            class="product-img product-img-default">
+            class="product-img product-img-default" loading="lazy" decoding="async">
           <img src="assets/hiking_ridge_hover.jpg" alt="Person wearing AERIS Ridge Terracotta Rust Hiking Boot"
-            class="product-img product-img-hover">
+            class="product-img product-img-hover" loading="lazy" decoding="async">
         </div>
         <div class="product-info">
           <h3 class="product-title">AERIS Ridge</h3>
@@ -271,9 +272,9 @@
       <div class="product-column">
         <div class="product-image-wrapper">
           <img src="assets/hiking_alpine_default.jpg" alt="AERIS Alpine Obsidian Charcoal Hiking Boot"
-            class="product-img product-img-default">
+            class="product-img product-img-default" loading="lazy" decoding="async">
           <img src="assets/hiking_alpine_hover.jpg" alt="Person wearing AERIS Alpine Obsidian Charcoal Hiking Boot"
-            class="product-img product-img-hover">
+            class="product-img product-img-hover" loading="lazy" decoding="async">
         </div>
         <div class="product-info">
           <h3 class="product-title">AERIS Alpine</h3>
@@ -286,9 +287,9 @@
       <div class="product-column">
         <div class="product-image-wrapper">
           <img src="assets/hiking_glacier_default.jpg" alt="AERIS Glacier Steel Blue Hiking Shoe"
-            class="product-img product-img-default">
+            class="product-img product-img-default" loading="lazy" decoding="async">
           <img src="assets/hiking_glacier_hover.jpg" alt="Person wearing AERIS Glacier Steel Blue Hiking Shoe"
-            class="product-img product-img-hover">
+            class="product-img product-img-hover" loading="lazy" decoding="async">
         </div>
         <div class="product-info">
           <h3 class="product-title">AERIS Glacier</h3>
@@ -303,7 +304,7 @@
   <section class="brand-feature-section" id="summerClassicSection" aria-label="Summer Feature Highlight">
     <div class="feature-bg-container">
       <img src="assets/summer_classic_bg.jpg" class="feature-bg-img"
-        alt="Two people walking side-by-side in AERIS sneakers on a stone pier">
+        alt="Two people walking side-by-side in AERIS sneakers on a stone pier" loading="lazy" decoding="async">
       <div class="feature-overlay"></div>
     </div>
     <div class="feature-content">
@@ -336,9 +337,9 @@
       <div class="product-column">
         <div class="product-image-wrapper">
           <img src="assets/walking_breeze_default.jpg" alt="AERIS Breeze White/Gray Walking Shoe"
-            class="product-img product-img-default">
+            class="product-img product-img-default" loading="lazy" decoding="async">
           <img src="assets/walking_breeze_hover.jpg" alt="AERIS Breeze on a sunny path"
-            class="product-img product-img-hover">
+            class="product-img product-img-hover" loading="lazy" decoding="async">
         </div>
         <div class="product-info">
           <h3 class="product-title">AERIS Breeze</h3>
@@ -351,9 +352,9 @@
       <div class="product-column">
         <div class="product-image-wrapper">
           <img src="assets/walking_cloud_default.jpg" alt="AERIS Cloud Sky Blue Walking Shoe"
-            class="product-img product-img-default">
+            class="product-img product-img-default" loading="lazy" decoding="async">
           <img src="assets/walking_cloud_hover.jpg" alt="AERIS Cloud on a wooden boardwalk"
-            class="product-img product-img-hover">
+            class="product-img product-img-hover" loading="lazy" decoding="async">
         </div>
         <div class="product-info">
           <h3 class="product-title">AERIS Cloud</h3>
@@ -366,9 +367,9 @@
       <div class="product-column">
         <div class="product-image-wrapper">
           <img src="assets/walking_mist_default.jpg" alt="AERIS Mist Slate Gray Walking Shoe"
-            class="product-img product-img-default">
+            class="product-img product-img-default" loading="lazy" decoding="async">
           <img src="assets/walking_mist_hover.jpg" alt="AERIS Mist in a modern plaza"
-            class="product-img product-img-hover">
+            class="product-img product-img-hover" loading="lazy" decoding="async">
         </div>
         <div class="product-info">
           <h3 class="product-title">AERIS Mist</h3>
@@ -381,9 +382,9 @@
       <div class="product-column">
         <div class="product-image-wrapper">
           <img src="assets/walking_dawn_default.jpg" alt="AERIS Dawn Rose/Peach Walking Shoe"
-            class="product-img product-img-default">
+            class="product-img product-img-default" loading="lazy" decoding="async">
           <img src="assets/walking_dawn_hover.jpg" alt="AERIS Dawn in a botanical garden"
-            class="product-img product-img-hover">
+            class="product-img product-img-hover" loading="lazy" decoding="async">
         </div>
         <div class="product-info">
           <h3 class="product-title">AERIS Dawn</h3>
@@ -396,9 +397,9 @@
       <div class="product-column">
         <div class="product-image-wrapper">
           <img src="assets/walking_dusk_default.jpg" alt="AERIS Dusk Charcoal/Indigo Walking Shoe"
-            class="product-img product-img-default">
+            class="product-img product-img-default" loading="lazy" decoding="async">
           <img src="assets/walking_dusk_hover.jpg" alt="AERIS Dusk on a twilight cobblestone street"
-            class="product-img product-img-hover">
+            class="product-img product-img-hover" loading="lazy" decoding="async">
         </div>
         <div class="product-info">
           <h3 class="product-title">AERIS Dusk</h3>
@@ -416,11 +417,11 @@
       <div class="shoefinder-images-column">
         <div class="shoefinder-img-small-wrapper">
           <img src="assets/shoefinder_trail.jpg" class="shoefinder-img"
-            alt="Close-up of cream organic rubber tread climbing a trail">
+            alt="Close-up of cream organic rubber tread climbing a trail" loading="lazy" decoding="async">
         </div>
         <div class="shoefinder-img-large-wrapper">
           <img src="assets/shoefinder_water.jpg" class="shoefinder-img"
-            alt="White plant-fiber sneaker stepping on wet sea rocks with water splashing">
+            alt="White plant-fiber sneaker stepping on wet sea rocks with water splashing" loading="lazy" decoding="async">
         </div>
       </div>
 
@@ -452,7 +453,7 @@
       <div class="product-column">
         <div class="category-card">
           <img src="assets/summer_classic_bg.jpg" class="category-img"
-            alt="Two people walking side-by-side in AERIS sneakers on a stone pier">
+            alt="Two people walking side-by-side in AERIS sneakers on a stone pier" loading="lazy" decoding="async">
           <div class="category-card-overlay">
             <h3 class="category-card-title" id="catLabelNewArrivals">New Arrivals</h3>
           </div>
@@ -463,7 +464,7 @@
       <div class="product-column">
         <div class="category-card">
           <img src="assets/walking_cloud_hover.jpg" class="category-img"
-            alt="Close-up of sky blue sneakers walking on a wooden boardwalk">
+            alt="Close-up of sky blue sneakers walking on a wooden boardwalk" loading="lazy" decoding="async">
           <div class="category-card-overlay">
             <h3 class="category-card-title" id="catLabelPlantKnit">Plant-Knit Sneakers</h3>
           </div>
@@ -474,7 +475,7 @@
       <div class="product-column">
         <div class="category-card">
           <img src="assets/hiking_peak_hover.jpg" class="category-img"
-            alt="Forest green hiking boots walking on a wet mud trail path">
+            alt="Forest green hiking boots walking on a wet mud trail path" loading="lazy" decoding="async">
           <div class="category-card-overlay">
             <h3 class="category-card-title" id="catLabelAllWeather">All-Weather Hiking</h3>
           </div>
@@ -485,7 +486,7 @@
       <div class="product-column">
         <div class="category-card">
           <img src="assets/walking_breeze_hover.jpg" class="category-img"
-            alt="Person wearing white walking shoes running in a sunny park with joggers blurred in background">
+            alt="Person wearing white walking shoes running in a sunny park with joggers blurred in background" loading="lazy" decoding="async">
           <div class="category-card-overlay">
             <h3 class="category-card-title" id="catLabelActiveApparel">Active Apparel</h3>
           </div>
@@ -496,7 +497,7 @@
       <div class="product-column">
         <div class="category-card">
           <img src="assets/shoefinder_trail.jpg" class="category-img"
-            alt="Close-up of a shoe sole cream tread pattern climbing a rocky trail">
+            alt="Close-up of a shoe sole cream tread pattern climbing a rocky trail" loading="lazy" decoding="async">
           <div class="category-card-overlay">
             <h3 class="category-card-title" id="catLabelFootwearTech">Footwear Tech</h3>
           </div>
@@ -508,7 +509,7 @@
   <!-- Brand Mission Section -->
   <section class="brand-mission-section" aria-label="Brand Mission">
     <!-- Looping Background Video with Cover Image Fallback -->
-    <video autoplay loop muted playsinline class="mission-bg-video" poster="assets/brand_mission_bg.jpg"
+    <video autoplay loop muted playsinline preload="none" class="mission-bg-video" poster="assets/brand_mission_bg.jpg"
       id="missionVideo">
       <source src="assets/brand_mission.mp4" type="video/mp4">
     </video>
@@ -879,13 +880,13 @@
       <div class="mobile-drawer-showcase">
         <div class="drawer-showcase-item">
           <div class="drawer-showcase-img-wrapper">
-            <img src="assets/summer_classic_bg.jpg" alt="New Arrivals" class="drawer-showcase-img">
+            <img src="assets/summer_classic_bg.jpg" alt="New Arrivals" class="drawer-showcase-img" loading="lazy" decoding="async">
           </div>
           <span class="drawer-showcase-label">New Arrivals</span>
         </div>
         <div class="drawer-showcase-item">
           <div class="drawer-showcase-img-wrapper">
-            <img src="assets/hiking_peak_hover.jpg" alt="Hiking Shoes" class="drawer-showcase-img">
+            <img src="assets/hiking_peak_hover.jpg" alt="Hiking Shoes" class="drawer-showcase-img" loading="lazy" decoding="async">
           </div>
           <span class="drawer-showcase-label">Hiking Shoes</span>
         </div>

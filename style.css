@@ -2139,3 +2139,17 @@ body {
 .product-grid::-webkit-scrollbar {
   display: none;
 }
+
+/* Modern Web Performance & Rendering Optimizations */
+.product-carousel-section,
+.shoefinder-section,
+.category-section,
+.brand-mission-section,
+.brand-footer {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 800px;
+}
+
+img, video {
+  content-visibility: auto;
+}
